@@ -51,9 +51,9 @@ public class ReadJson {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");//加载数据库驱动
 			System.out.println("加载数据库驱动成功");
-			String url = "jdbc:mysql://10.207.86.22/guo";
-			String user	= "meng";
-			String password = "123456";
+			String url = "jdbc:mysql:///guo";//数据库ip:端口/数据库名称
+			String user	= "";//账户名
+			String password = "";//密码
 			//建立数据库连接，获取连接对象
 			Connection conn = DriverManager.getConnection(url, user, password);
 			System.out.println("数据库连接成功");
